@@ -2,6 +2,7 @@ package coding.twitterclone.domain;
 
 import javax.persistence.*;
 
+//database entity
 @Entity
 public class Message {
     @Id
@@ -10,6 +11,7 @@ public class Message {
     private String text;
     private String tag;
 
+    //mapping for author show user with message
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "user_id")
     private User author;
@@ -22,6 +24,7 @@ public class Message {
         this.tag = tag;
     }
 
+    //check for author
     public String getAuthorName() {
         return author != null ? author.getUsername() : "<none>";
     }

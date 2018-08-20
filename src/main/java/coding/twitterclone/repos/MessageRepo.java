@@ -7,5 +7,6 @@ import java.util.List;
 
 public interface MessageRepo extends CrudRepository<Message, Long> {
 
+    //messages search
     List<Message> findByTag(String tag);
 }

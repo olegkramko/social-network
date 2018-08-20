@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import java.util.Collections;
 import java.util.Map;
 
+//controller for registration
 @Controller
 public class RegistrationController {
     @Autowired
@@ -25,6 +26,7 @@ public class RegistrationController {
     public String addUser(User user, Map<String, Object> model) {
         User userFromDb = userRepo.findByUsername(user.getUsername());
 
+        //if user exist return to registration page
         if (userFromDb != null) {
             model.put("message", "User exists!");
             return "registration";
