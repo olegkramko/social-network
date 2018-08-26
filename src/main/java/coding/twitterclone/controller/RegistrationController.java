@@ -26,15 +26,18 @@ public class RegistrationController {
     public String addUser(User user, Map<String, Object> model) {
         User userFromDb = userRepo.findByUsername(user.getUsername());
 
-        //if user exist return to registration page
         if (userFromDb != null) {
             model.put("message", "User exists!");
             return "registration";
         }
 
+        //set user role
         user.setActive(true);
-        user.setRoles(Collections.singleton(Role.USER));
+        if(userRepo.count()==0) {
+        user.setRoles(Collections.singleton(Role.ADMIN));}
+        else user.setRoles(Collections.singleton(Role.USER));
         userRepo.save(user);
+
         return "redirect:/login";
     }
 }

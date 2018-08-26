@@ -15,6 +15,7 @@ public class Message {
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "user_id")
     private User author;
+
     public Message() {
     }
 
@@ -24,7 +25,6 @@ public class Message {
         this.tag = tag;
     }
 
-    //check for author
     public String getAuthorName() {
         return author != null ? author.getUsername() : "<none>";
     }
@@ -36,6 +36,7 @@ public class Message {
     public void setAuthor(User author) {
         this.author = author;
     }
+
     public void setText(String text) {
         this.text = text;
     }
@@ -44,20 +45,19 @@ public class Message {
         return text;
     }
 
-    public void setId(Integer id) {
-        this.id = id;
-    }
-
     public Integer getId() {
         return id;
     }
 
-    public void setTag(String tag) {
-        this.tag = tag;
+    public void setId(Integer id) {
+        this.id = id;
     }
 
     public String getTag() {
         return tag;
     }
 
+    public void setTag(String tag) {
+        this.tag = tag;
+    }
 }
