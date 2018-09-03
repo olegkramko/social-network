@@ -22,4 +22,4 @@ To login as User use:
 Username: user
 Password: user
 
-Or just registrate you own new account(can be only with User permitions)
+Or just registrate you own new account(can be only with User permissions)
