@@ -10,7 +10,7 @@ This is a simple web application for sharing short massages and pictures.
 * Maven
 * Bootstrap
 
-Use google recaptcha https://www.google.com/recaptcha/intro/v3beta.html
+Google recaptcha https://www.google.com/recaptcha/intro/v3beta.html
 
 To login as Administrator use:
 
