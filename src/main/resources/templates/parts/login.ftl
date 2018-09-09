@@ -45,7 +45,7 @@
             <div class="col-sm-6">
                 <input type="email" name="email" value="<#if user??>${user.email}</#if>"
                        class="form-control ${(emailError??)?string('is-invalid', '')}"
-                       placeholder="some@some.com" />
+                       placeholder="email@email.com" />
                 <#if emailError??>
                     <div class="invalid-feedback">
                         ${emailError}
@@ -53,15 +53,14 @@
                 </#if>
             </div>
         </div>
-    <div>
-            <div class="col-sm-6">
+        <div class="col-sm-6">
             <div class="g-recaptcha" data-sitekey="6LdwBm4UAAAAAH--nq6YF2cz6lrnB_V2kLlaRu4m"></div>
-        <#if captchaError??>
-    <div class="alert alert-alert-danger" role="alert">
-        ${captchaError}
-    </div>
-        </#if>
-    </div>
+            <#if captchaError??>
+                <div class="alert alert-danger" role="alert">
+                    ${captchaError}
+                </div>
+            </#if>
+        </div>
     </#if>
     <input type="hidden" name="_csrf" value="${_csrf.token}" />
     <#if !isRegisterForm><a href="/registration">Add new user</a></#if>
@@ -72,6 +71,6 @@
 <#macro logout>
 <form action="/logout" method="post">
     <input type="hidden" name="_csrf" value="${_csrf.token}" />
-    <button class="btn btn-primary" type="submit">In/Out</button>
+    <button class="btn btn-primary" type="submit"><#if user??>Sign Out<#else>Log in</#if></button>
 </form>
 </#macro>

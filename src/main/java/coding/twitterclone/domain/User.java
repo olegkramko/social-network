@@ -6,11 +6,11 @@ import javax.persistence.*;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
 import java.util.Collection;
+import java.util.HashSet;
 import java.util.Objects;
 import java.util.Set;
 
 //users and roles
-
 @Entity
 @Table(name = "usr")
 public class User implements UserDetails {
@@ -24,7 +24,7 @@ public class User implements UserDetails {
     private boolean active;
 
     @Email(message = "Email is not correct")
-    @NotBlank(message = "Email cannot be empty")
+    @NotBlank(message = "Email line cannot be empty")
     private String email;
     private String activationCode;
 
@@ -35,6 +35,22 @@ public class User implements UserDetails {
 
     @OneToMany(mappedBy = "author", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private Set<Message> messages;
+
+    @ManyToMany
+    @JoinTable(
+            name = "user_subscriptions",
+            joinColumns = { @JoinColumn(name = "channel_id") },
+            inverseJoinColumns = { @JoinColumn(name = "subscriber_id") }
+    )
+    private Set<User> subscribers = new HashSet<>();
+
+    @ManyToMany
+    @JoinTable(
+            name = "user_subscriptions",
+            joinColumns = { @JoinColumn(name = "subscriber_id") },
+            inverseJoinColumns = { @JoinColumn(name = "channel_id") }
+    )
+    private Set<User> subscriptions = new HashSet<>();
 
     @Override
     public boolean equals(Object o) {
@@ -141,5 +157,21 @@ public class User implements UserDetails {
 
     public void setMessages(Set<Message> messages) {
         this.messages = messages;
+    }
+
+    public Set<User> getSubscribers() {
+        return subscribers;
+    }
+
+    public void setSubscribers(Set<User> subscribers) {
+        this.subscribers = subscribers;
+    }
+
+    public Set<User> getSubscriptions() {
+        return subscriptions;
+    }
+
+    public void setSubscriptions(Set<User> subscriptions) {
+        this.subscriptions = subscriptions;
     }
 }
