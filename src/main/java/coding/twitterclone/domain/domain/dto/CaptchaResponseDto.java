@@ -1,4 +1,4 @@
-package coding.twitterclone.domain.dto;
+package coding.twitterclone.domain.domain.dto;
 
 import com.fasterxml.jackson.annotation.JsonAlias;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;

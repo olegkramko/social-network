@@ -1,8 +1,8 @@
-package coding.twitterclone.controller;
+package coding.twitterclone.domain.controller;
 
-import coding.twitterclone.domain.Message;
-import coding.twitterclone.domain.User;
-import coding.twitterclone.repos.MessageRepo;
+import coding.twitterclone.domain.domain.Message;
+import coding.twitterclone.domain.domain.User;
+import coding.twitterclone.domain.repos.MessageRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;

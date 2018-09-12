@@ -1,4 +1,4 @@
-package coding.twitterclone.domain;
+package coding.twitterclone.domain.domain;
 
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;

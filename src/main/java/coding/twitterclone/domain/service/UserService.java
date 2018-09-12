@@ -1,8 +1,8 @@
-package coding.twitterclone.service;
+package coding.twitterclone.domain.service;
 
-import coding.twitterclone.domain.Role;
-import coding.twitterclone.domain.User;
-import coding.twitterclone.repos.UserRepo;
+import coding.twitterclone.domain.domain.Role;
+import coding.twitterclone.domain.domain.User;
+import coding.twitterclone.domain.repos.UserRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;

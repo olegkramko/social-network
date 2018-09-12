@@ -1,8 +1,8 @@
-package coding.twitterclone.controller;
+package coding.twitterclone.domain.controller;
 
-import coding.twitterclone.domain.Role;
-import coding.twitterclone.domain.User;
-import coding.twitterclone.service.UserService;
+import coding.twitterclone.domain.domain.Role;
+import coding.twitterclone.domain.domain.User;
+import coding.twitterclone.domain.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;

@@ -1,8 +1,8 @@
-package coding.twitterclone.controller;
+package coding.twitterclone.domain.controller;
 
-import coding.twitterclone.domain.User;
-import coding.twitterclone.domain.dto.CaptchaResponseDto;
-import coding.twitterclone.service.UserService;
+import coding.twitterclone.domain.domain.User;
+import coding.twitterclone.domain.domain.dto.CaptchaResponseDto;
+import coding.twitterclone.domain.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;

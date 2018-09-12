@@ -1,4 +1,4 @@
-package coding.twitterclone.domain;
+package coding.twitterclone.domain.domain;
 
 import org.hibernate.validator.constraints.Length;
 

@@ -1,6 +1,6 @@
-package coding.twitterclone.repos;
+package coding.twitterclone.domain.repos;
 
-import coding.twitterclone.domain.User;
+import coding.twitterclone.domain.domain.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface UserRepo extends JpaRepository<User, Long> {

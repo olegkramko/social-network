@@ -1,5 +1,5 @@
-package coding.twitterclone.repos;
-import coding.twitterclone.domain.Message;
+package coding.twitterclone.domain.repos;
+import coding.twitterclone.domain.domain.Message;
 import org.springframework.data.repository.CrudRepository;
 import java.util.List;
 

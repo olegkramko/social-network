@@ -1,4 +1,4 @@
-package coding.twitterclone.controller;
+package coding.twitterclone.domain.controller;
 
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.FieldError;
