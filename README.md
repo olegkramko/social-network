@@ -17,9 +17,4 @@ To login as Administrator use:
 Username: admin
 Password: admin
 
-To login as User use:
-
-Username: user
-Password: user
-
 Or just registrate you own new account(can be only with User permissions)
