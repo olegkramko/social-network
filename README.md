@@ -5,7 +5,7 @@ This is a simple web application for sharing short massages and pictures.
 
 Tech Stack
 * Java
-* Spring
+* Spring Framework
 * PostgreSQL
 * Maven
 * Bootstrap
