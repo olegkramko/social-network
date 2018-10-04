@@ -12,6 +12,8 @@ Tech Stack
 
 Google recaptcha https://www.google.com/recaptcha/intro/v3beta.html
 
+# Functionality
+
 To login as Administrator use:
 
 Username: admin
