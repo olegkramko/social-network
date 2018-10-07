@@ -33,3 +33,4 @@ Password: admin
 * Edit user(only for user with admin permissions)
 * User roles
 * Passwords encryption
+* Pagination(number of pages and elements)
