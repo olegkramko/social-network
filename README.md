@@ -3,14 +3,17 @@
 
 This is a simple web application for sharing short massages and pictures.
 
+To login as Administrator use:
+
+Username: admin
+Password: admin
+
 # Tech Stack
 * Java
 * Spring Framework
 * PostgreSQL
 * Maven
 * Bootstrap
-
-Google recaptcha https://www.google.com/recaptcha/intro/v3beta.html
 
 # Functionality
 * Registration
@@ -30,8 +33,3 @@ Google recaptcha https://www.google.com/recaptcha/intro/v3beta.html
 * Edit user(only for user with admin permissions)
 * User roles
 * Passwords encryption
-
-To login as Administrator use:
-
-Username: admin
-Password: admin
