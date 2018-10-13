@@ -1,7 +1,7 @@
 
 # Twitter Clone
 
-This is a simple web application for sharing short massages and pictures.
+Web application for sharing short massages and pictures.
 
 To login as Administrator use:
 
@@ -23,12 +23,12 @@ Username: admin Password: admin
 * Edit message
 * Add tag to message
 * Search
-* Message likes
 * Email change
 * Email verification
 * Google Recaptcha verification
 * User profile
 * Message list
+* Message likes
 * Follow/Unfollow user
 * User roles
 * Passwords encryption
