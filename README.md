@@ -27,8 +27,8 @@ Username: admin Password: admin
 * Email verification
 * Google Recaptcha verification
 * User profile
-* Message list
 * Message likes
+* Message list
 * Follow/Unfollow user
 * User roles
 * Passwords encryption
