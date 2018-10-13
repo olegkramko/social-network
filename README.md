@@ -23,6 +23,7 @@ Username: admin Password: admin
 * Edit message
 * Add tag to message
 * Search
+* Message likes
 * Email change
 * Email verification
 * Google Recaptcha verification
