@@ -28,9 +28,6 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @WithUserDetails(value = "admin")
 public class MainControllerTest {
     @Autowired
-    private MainController controller;
-
-    @Autowired
     private MockMvc mockMvc;
 
     @Test
@@ -38,7 +35,7 @@ public class MainControllerTest {
         this.mockMvc.perform(get("/main"))
                 .andDo(print())
                 .andExpect(authenticated())
-                .andExpect(xpath("//*[@id='navbarSupportedContent']/div").string("admin"));
+                .andExpect(xpath("//*[@id='navbarSupportedContent']/div").string("dru"));
     }
 
     @Test
