@@ -1,7 +1,7 @@
 
 # Twitter Clone
 
-Web application for sharing short massages and pictures.
+Web application for sharing short massages and pictures
 
 To login as Administrator use:
 
