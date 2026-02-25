@@ -1,11 +1,11 @@
 
 # Twitter Clone
 
-Web application for sharing short messages and pictures
+Web application witch web interface for sharing short messages and pictures
 
 To login as Administrator use:
-
-Username: admin Password: admin
+Username: admin 
+Password: admin
 
 # Tech Stack
 * Java
