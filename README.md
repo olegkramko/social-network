@@ -1,5 +1,5 @@
 
-# Twitter Clone
+# Threads/Twitter like social network
 
 Web application witch web interface for sharing short messages and pictures
 
